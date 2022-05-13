@@ -1,0 +1,41 @@
+.container .row .marvelcard {
+  height: 90%;
+  margin-top: 19px;
+}
+
+.container .row .price {
+  color: #2b6868;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.container .row .marvelimg {
+  height: 380px;
+}
+
+.container .row .addbtn {
+  color: #b2aeae;
+  background-color: #663582;
+}
+
+.navbar {
+  margin-top: 30px;
+}
+
+.navbar .basket i {
+  width: 50px;
+  height: 50px;
+  font-size: 25px;
+  background-color: #919191;
+  border-radius: 50%;
+  color: #5349c2;
+}
+
+.navbar sup {
+  position: absolute;
+  top: 5px;
+  right: -1px;
+  font-size: 25px;
+  border-radius: 50%;
+}
+/*# sourceMappingURL=index.css.map */
