@@ -1,3 +1,8 @@
+body {
+  background-color: #41436A;
+  opacity: 78%;
+}
+
 .container .row .marvelcard {
   height: 90%;
   margin-top: 19px;
@@ -15,27 +20,30 @@
 
 .container .row .addbtn {
   color: #b2aeae;
-  background-color: #663582;
+  background-color: #a21028;
 }
 
 .navbar {
   margin-top: 30px;
-}
-
-.navbar .basket i {
-  width: 50px;
+  background-image: url(../assets/Image/avengers-modified-wallpaper.jpg);
+  padding: 10px;
+  background-repeat: no-repeat;
   height: 50px;
-  font-size: 25px;
-  background-color: #919191;
-  border-radius: 50%;
-  color: #5349c2;
 }
 
 .navbar sup {
   position: absolute;
-  top: 5px;
+  top: 8px;
   right: -1px;
   font-size: 25px;
   border-radius: 50%;
+  color: white;
+}
+
+.navbar .basket img {
+  width: 45px;
+  height: 45px;
+  border-radius: 48%;
+  background-color: white;
 }
 /*# sourceMappingURL=index.css.map */

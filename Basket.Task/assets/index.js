@@ -43,3 +43,26 @@ function calcCount() {
     let countValue = document.querySelector("sup");
     countValue.innerText = count;
   }
+  function displaycard() {
+    let cartItems = localStorage.getItem("index");
+    cartItems = JSON.parse(cartItems);
+    let productsContainer = document.querySelector(".products")
+    if (cartItems && productsContainer) {
+        productsContainer.innerHTML = '';
+        Object.values(cartItems).map(index => {
+            productsContainer.innerHTML += `
+       <div class="product"><i class="fa-regular fa-circle-xmark"></i><img class="imagee" src="${index.image}" alt="product"><span class="models">${index.model}</span>
+       </div>
+       <div class="pricee">${index.price}$</div>
+       <div class="quantity"><i class="fa-solid fa-angle-left icon"></i>
+       <span class="count">${index.count}</span><i class="fa-solid fa-angle-right icon"></i>
+       </div>
+       <div class="totals">$${index.count*index.price}
+       </div>
+       `
+       
+        })
+    }
+    
+}
+displaycard();
